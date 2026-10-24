@@ -1,0 +1,31 @@
+NiceDeck prototype source release — 24 October 2026
+
+Fresh checks of the public source package:
+PASS: Swift model/config/action tests: 61 checks.
+PASS: upload preparation tests: 13 tests, including refusal of unrelated devices.
+PASS: pure touch/geometry/icon tests: 256 checks.
+PASS: LVGL input pipeline tests: 37 checks against installed LVGL 9.3.0.
+PASS: Mac application compiled; ad-hoc signature verified by codesign.
+PASS: Python compilation, shell syntax, diagnostic CLI help, git whitespace check.
+PASS: shell, corrected carrier and stand STL meshes are watertight, single-body,
+      and positive-volume. These checks do not prove physical fit.
+PASS: reviewed staged inventory excludes backups, user configuration, binary
+      firmware, manufacturer geometry, personal hardware traces and session logs.
+      Pattern scan found no common credential formats or personal absolute paths.
+      This is a bounded source review, not a comprehensive security audit.
+
+BLOCKED: fresh firmware build. Installed Arduino builtin ctags 5.8-arduino11
+cannot execute on this Mac: bad CPU type in executable. The September handoff
+reported a successful 1.1.0 build, but it is not substituted for current evidence.
+No firmware binary is included. Firmware compilation must be verified using a
+compatible toolchain before distributing a firmware release.
+
+NOT VERIFIED: physical 1.1.0 touch behaviour, movement rejection, USB/HID actions,
+final v3b printed screw reach/clip durability, CAD regeneration on a fresh machine,
+notarization, and operation of the freshly built Mac app against hardware.
+
+Changes made for publication: portable explicit serial/port selection; fictitious
+unit-test serials; public printing instructions; original licence attribution
+preserved; LVGL template licence included; manufacturer reference files excluded.
+
+This is a source-only prototype publication, not a production/hardware release.

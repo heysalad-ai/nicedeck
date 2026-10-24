@@ -1,0 +1,14 @@
+build/
+backups/
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+enclosure/.venv/
+
+# Manufacturer assets downloaded locally for CAD verification
+enclosure/reference/*.stp
+enclosure/reference/*.step
+enclosure/reference/*.rar
+enclosure/reference/*.pdf
+enclosure/reference/*.dwg

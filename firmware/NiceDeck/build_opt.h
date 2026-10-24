@@ -1,0 +1,2 @@
+-DUSB_PRODUCT=\"NiceDeck\"
+-DUSB_MANUFACTURER=\"NiceDeck\"

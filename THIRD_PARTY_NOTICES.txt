@@ -1,0 +1,30 @@
+NiceDeck third-party dependency inventory
+
+Dependencies below are installed separately and are not vendored in this source
+repository. Their licences and notices apply when building/distributing binaries:
+
+Arduino-ESP32 3.3.11: https://github.com/espressif/arduino-esp32
+  Includes ESP-IDF, TinyUSB and other components with their own licences.
+ArduinoJson 7.4.3: https://github.com/bblanchon/ArduinoJson
+Adafruit GFX 1.12.6: https://github.com/adafruit/Adafruit-GFX-Library
+Adafruit ST7735/ST7789 1.11.0: https://github.com/adafruit/Adafruit-ST7735-Library
+Adafruit BusIO 1.17.4: https://github.com/adafruit/Adafruit_BusIO
+LVGL 9.3.0 (including its supplied fonts): https://github.com/lvgl/lvgl
+pyserial 3.5: https://github.com/pyserial/pyserial
+CadQuery 2.6.1 and its OpenCascade dependencies: https://github.com/CadQuery/cadquery
+trimesh 5.1.0: https://github.com/mikedh/trimesh
+networkx 3.6.1: https://github.com/networkx/networkx
+
+macOS uses Apple SwiftUI/AppKit and system symbols at runtime. No Apple symbol
+asset files are redistributed. The app icon is original vector geometry generated
+by scripts/make-app-icon.swift; device icons are drawn by DeckIcons.h.
+
+Waveshare board geometry and drawings are excluded. reference/source.json records
+the manufacturer download for CAD clearance checks; its terms apply separately.
+No affiliation with Waveshare, Apple, Elgato or AI service providers is implied.
+
+Original project name: OpenStreamDeck. Original copyright attribution in LICENSE
+is retained. NiceDeck is maintained by HeySalad and created by Peter Machona.
+
+firmware/NiceDeck/lv_conf.h is derived from the LVGL configuration template.
+Its upstream MIT notice is included at LICENSES/LVGL.txt.
